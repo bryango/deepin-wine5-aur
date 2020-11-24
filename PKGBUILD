@@ -23,6 +23,7 @@ sha256sums=(
 
 package_deepin-wine5() {
     depends=('deepin-wine5-i386')
+    provides=('wine')
 
     mkdir -p "deepin-wine5_${pkgver}-${pkgrel}"
     ar -x "deepin-wine5_${pkgver}-${pkgrel}_i386.deb" data.tar.xz --output "deepin-wine5_${pkgver}-${pkgrel}"
